@@ -116,11 +116,13 @@ Sau quá trình huấn luyện trên GPU (Google Colab), mô hình đạt đư�
 
 ### Ví dụ mô hình dịch (Sample Outputs)
 
+Dưới đây là kết quả thực tế từ tập Test, minh họa các trường hợp mô hình hoạt động tốt và các hạn chế còn tồn tại:
+
 | Loại | Tiếng Anh (Input) | Tiếng Pháp (Prediction) | Đánh giá |
 | :--- | :--- | :--- | :--- |
-| **Tốt** | *Two men are running.* | *Deux hommes courent.* | ✅ Đúng ngữ pháp & từ vựng. |
-| **Khá** | *A boy in a red shirt.* | *Un garçon en chemise rouge.* | ✅ Đúng cấu trúc, đúng màu sắc. |
-| **Kém** | *A large group of people stand in front of...* | *Un groupe de personnes...* | ⚠️ Mất thông tin ở cuối câu (do câu dài). |
+| **Tốt** | *A man in an orange hat starring at something.* | *un homme avec un chapeau orange regardant quelque chose .* | ✅ **Chính xác:** Dịch đúng toàn bộ từ vựng và cấu trúc. |
+| **Khá** | *Five people wearing winter jackets... with snowmobiles in the background.* | *cinq personnes portant des manteaux... avec des **\<unk>** en arrière-plan .* | ⚠️ **Lỗi OOV:** Cấu trúc câu phức tạp được dịch mượt mà, nhưng từ hiếm "snowmobiles" bị thay thế bằng `<unk>`. |
+| **Kém** | *A girl in karate uniform breaking a stick with a front kick.* | *une fille en tenue de karaté **karaté un un avec un un** .* | ❌ **Lỗi lặp từ:** Mô hình bị mất thông tin ngữ cảnh ở đoạn hành động phức tạp, dẫn đến lặp từ vô nghĩa. |
 
 -----
 
