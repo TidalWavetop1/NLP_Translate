@@ -2,7 +2,6 @@
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](./LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)]()
 
 > **Dự án Dịch máy Nơ-ron (Neural Machine Translation)** triển khai từ đầu (from scratch) kiến trúc **Encoder-Decoder LSTM** để dịch tiếng Anh sang tiếng Pháp trên bộ dữ liệu **Multi30K**.
@@ -129,11 +128,12 @@ Sau quá trình huấn luyện trên GPU (Google Colab), mô hình đạt đư�
 
 ```
 NLP_Translate/
-├── best_model.pth            # Checkpoint trọng số mô hình tốt nhất
-├── NLP_Translate.ipynb       # Source code chính (Notebook)
-├── model_translate_(3).html  # Log huấn luyện chi tiết (Loss/PPL per epoch)
-├── images/                   # Thư mục chứa hình ảnh báo cáo (nếu có)
-└── README.md                 # Tài liệu hướng dẫn (File này)
+├── data_clean                # Folder chưa dũ liệu sau khi xử lý và làm sạch
+├── datase                    # Folder dữ liệu thô
+├── model            # Các mô hình đã huấn luyện
+    ├── model_translate_(3).ipynb       # Source code sau cùng 
+├── path  # Folder chứa checkpoint của mô hình tốt nhất            
+└── README.md                 # Tài liệu hướng dẫn
 ```
 
 -----
@@ -163,9 +163,3 @@ NLP_Translate/
 
 -----
 
-\<p align="center"\>
-Author: \<a href="https://www.google.com/search?q=https://github.com/TidalWavetop1"\>TidalWavetop1\</a\> | 2025
-\</p\>
-
-```
-```
