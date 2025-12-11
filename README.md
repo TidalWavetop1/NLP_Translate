@@ -111,8 +111,8 @@ Sau quá trình huấn luyện trên GPU (Google Colab), mô hình đạt đư�
 
 | Metric | Giá trị | Nhận xét |
 | :--- | :--- | :--- |
-| **BLEU Score** | **\~25.4** | Kết quả khả quan cho kiến trúc LSTM cơ bản (Fixed Context Vector). |
-| **Test Loss** | **\~3.12** | Mô hình hội tụ tốt, không bị Overfitting nặng. |
+| **BLEU Score** | **\40.01** | Kết quả khả quan cho kiến trúc LSTM cơ bản (Fixed Context Vector). |
+| **Train Loss** | **\~1.581** | Mô hình hội tụ tốt, không bị Overfitting nặng. |
 
 ### Ví dụ mô hình dịch (Sample Outputs)
 
