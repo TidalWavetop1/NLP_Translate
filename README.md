@@ -5,7 +5,12 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)]()
 
 > **Dự án Dịch máy Nơ-ron (Neural Machine Translation)** triển khai từ đầu (from scratch) kiến trúc **Encoder-Decoder LSTM** để dịch tiếng Anh sang tiếng Pháp trên bộ dữ liệu **Multi30K**.
-
+---
+Người thực hiện dự án:
+-  Đỗ Nguyễn Thanh Phong
+* Email liên hệ: donguyenthanhphong2005@gmail.com
+- Trịnh Minh Toàn
+* Email liên hệ: 
 ---
 
 ## 📑 Mục lục (Table of Contents)
